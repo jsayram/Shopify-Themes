@@ -1,0 +1,540 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_size": "h1",
+            "title_alignment": "left",
+            "uppercase_title": false,
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "custom_liquid_reviews": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p>⭐⭐⭐⭐⭐ 5.0 | 323 Reviews</p>"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "layout": "price_second",
+            "price_color": "outline-button",
+            "compare_price_color": "outline-button",
+            "hide_sale_badge": false,
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_types": "",
+            "custom_labels": "[selected] Selection",
+            "swatches_custom_colors": "disabled",
+            "swatches_custom_colors_list": "#000000, #6D388B, #0000FF, #FFCC00",
+            "margin_top": 9,
+            "margin_bottom": 6
+          }
+        },
+        "quantity_selector_MiQtmW": {
+          "type": "quantity_selector",
+          "settings": {
+            "enable_quantity_discounts": false,
+            "headline": "Summer Deal Applied",
+            "preselected": "option_1",
+            "display_badge": "option_1",
+            "badge_text": "Most Popular",
+            "enable_variant_selectors": true,
+            "color_scheme": "accent-2",
+            "option_1_quantity": 1,
+            "option_1_label": "Discount",
+            "option_1_benefit": "20% off",
+            "option_1_caption": "You save [amount_saved]",
+            "option_1_percentage_off_text": "",
+            "option_1_fixed_amount_off": "",
+            "option_1_compare_price": "price",
+            "option_2_quantity": 0,
+            "option_2_label": "Deal 2",
+            "option_2_benefit": "20%",
+            "option_2_caption": "You save [amount_saved]",
+            "option_2_percentage_off_text": "20",
+            "option_2_fixed_amount_off": "0",
+            "option_2_compare_price": "compare_price",
+            "option_3_quantity": 0,
+            "option_3_label": "Deal 3",
+            "option_3_benefit": "30%",
+            "option_3_caption": "You save [amount_saved]",
+            "option_3_percentage_off_text": "30",
+            "option_3_fixed_amount_off": "0",
+            "option_3_compare_price": "compare_price",
+            "option_4_quantity": 0,
+            "option_4_label": "Deal 4",
+            "option_4_benefit": "60%",
+            "option_4_caption": "You save [amount_saved]",
+            "option_4_percentage_off_text": "60",
+            "option_4_fixed_amount_off": "",
+            "option_4_compare_price": "compare_price",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "skip_cart": false,
+            "uppercase_text": true,
+            "enable_custom_color": false,
+            "custom_color": "#6d388b",
+            "margin_top": 3,
+            "margin_bottom": 3,
+            "alignment": "center"
+          }
+        },
+        "icon_with_text_w9iNEH": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_size": "small",
+            "icon_1": "truck",
+            "heading_1": "Free tracked & insured shipping",
+            "icon_2": "box",
+            "heading_2": "Free Returns",
+            "icon_3": "return",
+            "heading_3": "30 Days Money Back Guarantee",
+            "margin_top": 18,
+            "margin_bottom": 18
+          }
+        },
+        "custom_liquid_main_info": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<script>\n(function() {\n  // Wait for DOM to be ready\n  function initQuantityPriceUpdater() {\n    const quantitySelector = document.querySelector('[data-quantity-selector]');\n    const priceDisplay = document.querySelector('[data-price]');\n    \n    if (!quantitySelector || !priceDisplay) {\n      // Retry if elements not found\n      setTimeout(initQuantityPriceUpdater, 100);\n      return;\n    }\n    \n    // Get the base price from the price display\n    function getBasePrice() {\n      const priceText = priceDisplay.textContent;\n      const priceMatch = priceText.match(/\\$([\\d,]+\\.?\\d*)/i);\n      return priceMatch ? parseFloat(priceMatch[1].replace(/,/g, '')) : 0;\n    }\n    \n    // Update total price when quantity changes\n    function updateTotalPrice() {\n      const selectedOption = quantitySelector.querySelector('input[type=\"radio\"]:checked');\n      if (selectedOption) {\n        const quantity = parseInt(selectedOption.value) || 1;\n        const basePrice = getBasePrice();\n        const totalPrice = (basePrice * quantity).toFixed(2);\n        \n        // Create or update total price display\n        let totalPriceDisplay = document.querySelector('[data-total-price]');\n        if (!totalPriceDisplay) {\n          totalPriceDisplay = document.createElement('div');\n          totalPriceDisplay.setAttribute('data-total-price', '');\n          totalPriceDisplay.style.cssText = 'margin-top: 10px; font-size: 1.2em; font-weight: bold; color: #c9907a;';\n          priceDisplay.parentNode.insertAfter(totalPriceDisplay, priceDisplay);\n        }\n        totalPriceDisplay.textContent = 'Total: $' + totalPrice;\n      }\n    }\n    \n    // Listen for quantity changes\n    quantitySelector.addEventListener('change', updateTotalPrice);\n    \n    // Initial update\n    updateTotalPrice();\n  }\n  \n  // Start initialization when DOM is ready\n  if (document.readyState === 'loading') {\n    document.addEventListener('DOMContentLoaded', initQuantityPriceUpdater);\n  } else {\n    initQuantityPriceUpdater();\n  }\n})();\n</script>"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "custom_liquid_reviews",
+        "price",
+        "variant_picker",
+        "quantity_selector_MiQtmW",
+        "buy_buttons",
+        "icon_with_text_w9iNEH",
+        "custom_liquid_main_info"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "display_variant_image_first": false,
+        "disable_prepend": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "desktop_thumbnails_count": 4,
+        "video_player": "play_btn",
+        "enable_video_looping": false,
+        "autoplay_videos_pause_btn": false,
+        "play_btn_color_scheme": "accent-1",
+        "mobile_thumbnails": "columns",
+        "mobile_media_corner_radius": 0,
+        "mobile_spacing": false,
+        "mobile_preview_media": true,
+        "mobile_thumbnails_count": 5,
+        "mobile_pagination": "dots_overlay",
+        "hide_arrows": true,
+        "dots_color_scheme": "inverse",
+        "trust_badge_position": "top-right",
+        "trust_badge_size": "medium",
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 16,
+        "desktop_padding_top": 36,
+        "desktop_padding_bottom": 36
+      }
+    },
+    "image_with_text_first": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_image_first": {
+          "type": "heading",
+          "settings": {
+            "heading": "Featured On",
+            "heading_size": "h2"
+          }
+        },
+        "caption_image_first": {
+          "type": "caption",
+          "settings": {
+            "caption": "As seen on popular fitness platforms and health magazines.",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "text_image_first": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Fitness Magazine</li><li>Healthline</li><li>Shape</li><li>Men's Health</li><li>Women's Health</li></ul>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_image_first",
+        "caption_image_first",
+        "text_image_first"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/2bca7007d36e41b6b5b876d1a7c2c2d3_tplv-fhlh96nyum-crop-webp_733_767.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_main_review": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_main_review": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Jessica T.</p>",
+            "heading_size": "h2"
+          }
+        },
+        "text_main_review": {
+          "type": "text",
+          "settings": {
+            "text": "<p>These resistance bands are a game changer for my workouts – they provide just the right amount of resistance and stay in place perfectly!</p>"
+          }
+        },
+        "text_tiFgNf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>⭐⭐⭐⭐⭐</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_main_review",
+        "text_main_review",
+        "text_tiFgNf"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff"
+      }
+    },
+    "image_with_text_second": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_image_second": {
+          "type": "heading",
+          "settings": {
+            "heading": "Unlock Your Inner Fitness Ninja",
+            "heading_size": "h2"
+          }
+        },
+        "text_image_second": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Transform your workout game with our Professional Resistance Bands Set! These stretchy wonders are perfect for sculpting those legs and glutes while you channel your inner fitness ninja. With three resistance levels, you can go from ‘I might break a sweat’ to ‘I’m a workout warrior’ in no time. Plus, they’re non-slip, so you can focus on crushing your goals instead of chasing your bands around the room. Perfect for home, gym, or wherever you flex your muscles!</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_image_second",
+        "text_image_second"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/8f05b872a53b4d8985dac88e15317dca_tplv-fhlh96nyum-crop-webp_701_757.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_third": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_image_third": {
+          "type": "heading",
+          "settings": {
+            "heading": "Premium Fabric Feel",
+            "heading_size": "hxl"
+          }
+        },
+        "text_image_third": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>You've felt it before — a rubber band rolling up your thigh mid-squat, pinching your skin, killing your focus right when you need it most. You readjust. You lose the rep. You lose the burn.</strong></p><p><strong><br/>Made from premium woven fabrib ( not rubber, not latex ) our bands feel soft against your skin from the first rep to the last. No pinching. No digging. No rolling. Just smooth, consistent resistance that lets you stay locked into your workout instead of fighting your equipment.<br/><br/>The wide non-slip grip keeps the band exactly where you placed it — through hip thrusts, squats, kickbacks, lateral walks, and everything in between. No adjusting. No slipping. No excuses.<br/><br/>Compact enough for your gym bag, durable enough to outlast every cheap rubber set you've tried before. GluteLoom bands go wherever your workout takes you — at home, at the gym, or on the road.</strong></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_image_third",
+        "text_image_third"
+      ],
+      "name": "Image with text -premium",
+      "settings": {
+        "image": "shopify://shop_images/LEVELS_2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_txYPKQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_whbmY3": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>What Our Customers Are Saying</p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_whbmY3"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 36,
+        "padding_bottom": 0,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff"
+      }
+    },
+    "multicolumn_reviews": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_6b86b273ff34": {
+          "type": "column",
+          "settings": {
+            "title": "⭐⭐⭐⭐⭐",
+            "text": "<p>These resistance bands are a game changer! I've been using them for my Pilates classes, and they really help to intensify my workouts. Highly recommend!<br/><br/><strong>Emily R.</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_d4735e3a265e": {
+          "type": "column",
+          "settings": {
+            "title": "⭐⭐⭐⭐⭐",
+            "text": "<p>I love this product! It’s exactly what I needed. The different resistance levels make it easy to adjust and challenge myself as I get stronger.<br/><br/><strong>Michael T.</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_4e07408562be": {
+          "type": "column",
+          "settings": {
+            "title": "⭐⭐⭐⭐⭐",
+            "text": "<p>The non-slip design is fantastic! I can focus on my workout without worrying about the bands slipping. Great quality and super portable!<br/><br/><strong>Sarah L.</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_6b86b273ff34",
+        "column_d4735e3a265e",
+        "column_4e07408562be"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_FAQ": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_6b86b273ff34": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the resistance levels of the bands?",
+            "icon": "none",
+            "row_content": "<p>Our Professional Resistance Bands Set features three bands with varying resistance levels: light (20-35 lbs), medium (30-50 lbs), and heavy (45-70 lbs) to accommodate all fitness levels.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_d4735e3a265e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use these bands for yoga and Pilates?",
+            "icon": "none",
+            "row_content": "<p>Absolutely! These resistance bands are versatile and perfect for yoga, Pilates, and a variety of strength training exercises.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_4e07408562be": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are the bands suitable for both men and women?",
+            "icon": "none",
+            "row_content": "<p>Yes, our resistance bands are designed for everyone, making them an ideal choice for both men and women looking to enhance their fitness routine.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_4b227777d4dd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I clean and maintain the resistance bands?",
+            "icon": "none",
+            "row_content": "<p>Simply wipe the bands with a damp cloth after use to remove sweat and dirt. Avoid using harsh chemicals to maintain their quality.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ef2d127de37b": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is there a warranty on the resistance bands?",
+            "icon": "none",
+            "row_content": "<p>Yes, we offer a 1-year warranty on our Professional Resistance Bands Set to ensure your satisfaction and peace of mind.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_e7f6c011776e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How portable are these resistance bands?",
+            "icon": "none",
+            "row_content": "<p>These bands are lightweight and designed for easy portability, making them perfect for workouts at home, in the gym, or while traveling.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_7902699be42c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do the bands slip during workouts?",
+            "icon": "none",
+            "row_content": "<p>No, our resistance bands feature a durable non-slip design that keeps them securely in place, allowing you to focus on your workout.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_2c624232cdd2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does shipping take?",
+            "icon": "none",
+            "row_content": "<p>Shipping typically takes 5-7 business days, so you can start your fitness journey in no time!</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_6b86b273ff34",
+        "collapsible_row_d4735e3a265e",
+        "collapsible_row_4e07408562be",
+        "collapsible_row_4b227777d4dd",
+        "collapsible_row_ef2d127de37b",
+        "collapsible_row_e7f6c011776e",
+        "collapsible_row_7902699be42c",
+        "collapsible_row_2c624232cdd2"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39",
+        "custom_contaner_colors_background": "#ffffff",
+        "custom_container_gradient_background": "",
+        "custom_contaner_colors_text": "#2e2a39"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_first",
+    "rich_text_main_review",
+    "image_with_text_second",
+    "image_with_text_third",
+    "rich_text_txYPKQ",
+    "multicolumn_reviews",
+    "collapsible_content_FAQ"
+  ]
+}

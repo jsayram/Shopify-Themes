@@ -1,0 +1,180 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "ds-main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 12,
+        "columns_desktop": 1,
+        "color_scheme": "scheme-f55ec6af-c156-4886-aa1c-fff95e0e8ea7",
+        "product_cards_stretch": true,
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "1",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "collage_RiDjhz": {
+      "type": "collage",
+      "blocks": {
+        "image_d6MHRP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/homepage4.jpg"
+          }
+        },
+        "product_gjL7rD": {
+          "type": "product",
+          "settings": {
+            "product": "waterproof-fitness-sports-travel-duffel-bag-versatile-weekender-for-men-and-women",
+            "second_image": false
+          }
+        },
+        "collection_np8g8k": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        }
+      },
+      "block_order": [
+        "image_d6MHRP",
+        "product_gjL7rD",
+        "collection_np8g8k"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Active Sports Bag",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "none",
+        "color_scheme": "custom",
+        "padding_top": 36,
+        "padding_bottom": 0,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#000000"
+      }
+    },
+    "collapsible_content_mTxQUA": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_BKkxfP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What size is the bag, and how much can it hold?",
+            "icon": "none",
+            "row_content": "<h5>Our sports bag comes in a <strong>medium size (20L)</strong> and a <strong>large size (35L)</strong>. It’s spacious enough to fit your workout clothes, a pair of shoes, a water bottle, and essential accessories. The ventilated shoe compartment can hold up to a size 14 men’s shoe.</h5><h5></h5>",
+            "page": ""
+          }
+        },
+        "collapsible_row_YJm497": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is the bag waterproof?",
+            "icon": "none",
+            "row_content": "<h5>The bag is made from <strong>water-resistant polyester fabric</strong>, which protects your belongings from light rain or accidental spills. However, it’s not completely waterproof for heavy downpours or submersion.</h5>",
+            "page": ""
+          }
+        },
+        "collapsible_row_zbyBaj": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use this bag for travel?",
+            "icon": "none",
+            "row_content": "<h5>Absolutely! The bag’s <strong>versatile design and lightweight construction</strong> make it ideal for short trips, weekend getaways, or as a carry-on for flights. The quick-access pockets and durable zippers also make travel more convenient.</h5>",
+            "page": ""
+          }
+        },
+        "collapsible_row_RyEhH9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does the bag have a dedicated shoe compartment?",
+            "icon": "none",
+            "row_content": "<h5>Yes, it features a <strong>ventilated shoe compartment</strong> designed to store your shoes separately from other items. The ventilation helps reduce odor and moisture buildup.</h5>",
+            "page": ""
+          }
+        },
+        "collapsible_row_w9Why7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I clean the bag?",
+            "icon": "none",
+            "row_content": "<h5>The bag can be easily cleaned with a damp cloth and mild soap for daily maintenance. For deeper cleaning:</h5><h5>Remove any items.</h5><h5>Spot-clean with warm water and a gentle detergent.</h5><h5>Allow it to air-dry completely before using again.</h5><h5>Avoid using washing machines or dryers to maintain its shape and durability.</h5>",
+            "page": ""
+          }
+        },
+        "collapsible_row_3actxk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_BKkxfP",
+        "collapsible_row_YJm497",
+        "collapsible_row_zbyBaj",
+        "collapsible_row_RyEhH9",
+        "collapsible_row_w9Why7",
+        "collapsible_row_3actxk"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39",
+        "custom_contaner_colors_background": "#ffffff",
+        "custom_container_gradient_background": "",
+        "custom_contaner_colors_text": "#2e2a39"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "collage_RiDjhz",
+    "collapsible_content_mTxQUA"
+  ]
+}
