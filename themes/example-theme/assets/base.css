@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: rgb(31, 31, 31);
+  background: rgb(250, 250, 250);
+}
+
+.page-width {
+  width: min(100% - 2rem, 72rem);
+  margin: 0 auto;
+}

@@ -1,0 +1,51 @@
+# Shopify CLI local files
+.shopify/
+.theme-check/
+shopify.theme.toml
+config.yml
+
+# Store-specific theme data
+# Commit config/settings_data.json only when it contains clean reusable defaults.
+# Ignore or sanitize it for client/store-specific content.
+
+# Dependencies and package-manager noise
+node_modules/
+.npm/
+.yarn/
+.pnpm-store/
+
+# Build outputs and caches
+dist/
+build/
+.cache/
+.parcel-cache/
+.vite/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment and local config
+.env
+.env.*
+!.env.example
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archive and backup files
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.bak
+*.tmp

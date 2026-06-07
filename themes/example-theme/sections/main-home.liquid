@@ -1,0 +1,18 @@
+<section class="page-width">
+  <h1>{{ shop.name }}</h1>
+  <p>{{ section.settings.heading }}</p>
+</section>
+
+{% schema %}
+{
+  "name": "Main home",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Welcome to your Shopify theme."
+    }
+  ]
+}
+{% endschema %}
