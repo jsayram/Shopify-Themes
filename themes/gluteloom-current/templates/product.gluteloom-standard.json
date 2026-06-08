@@ -235,7 +235,7 @@
         "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
         "media_position": "left",
-        "image_zoom": "lightbox",
+        "image_zoom": "none",
         "hide_variants": false,
         "desktop_thumbnails_count": 4,
         "video_player": "play_btn",
