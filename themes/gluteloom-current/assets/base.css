@@ -6425,3 +6425,438 @@ body {
 .alignment-start{
   margin-inline-start: auto;
 }
+
+/* GluteLoom brand polish */
+:root {
+  --gl-cream: #f7f0eb;
+  --gl-cream-deep: #eee4dc;
+  --gl-rose: #c9907a;
+  --gl-rose-light: #e8c4b5;
+  --gl-rose-dark: #9b6652;
+  --gl-peach: #e8a898;
+  --gl-mint: #9ec4b8;
+  --gl-charcoal: #3a3330;
+  --gl-border: rgba(155, 102, 82, 0.22);
+  --gl-shadow: 0 1.4rem 3.6rem rgba(58, 51, 48, 0.08);
+  --gl-heading-font: "Cormorant Garamond", Cormorant, Georgia, serif;
+  --gl-body-font: Jost, var(--font-body-family);
+}
+
+html {
+  background: var(--gl-cream);
+}
+
+body,
+.gradient {
+  background-color: var(--gl-cream);
+  color: var(--gl-charcoal);
+}
+
+body,
+.text-body,
+.caption,
+.caption-large,
+.customer .field input,
+.customer select,
+.field__input,
+.form__label,
+.select__select {
+  font-family: var(--gl-body-font);
+  letter-spacing: 0.01em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h0,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.header__heading-link .h2,
+.card__heading,
+.drawer__heading,
+.product__title h1 {
+  font-family: var(--gl-heading-font);
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--gl-charcoal);
+}
+
+.h0,
+.h1,
+h1,
+.product__title h1 {
+  line-height: 0.98;
+}
+
+.h2,
+h2,
+.rich-text__heading {
+  line-height: 1.05;
+}
+
+em,
+i,
+.gl-accent-text {
+  color: var(--gl-rose);
+  font-family: var(--gl-heading-font);
+  font-style: italic;
+}
+
+.caption-with-letter-spacing,
+.header__menu-item,
+.menu-drawer__menu-item,
+.badge,
+.gl-rating-line,
+.product__text.subtitle,
+.price__badge-sale,
+.price__badge-sold-out {
+  font-family: var(--gl-body-font);
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.header-wrapper,
+.shopify-section-header-sticky {
+  background: rgba(247, 240, 235, 0.96);
+  border-bottom: 0.1rem solid var(--gl-border);
+}
+
+.header__heading-logo {
+  width: auto;
+  max-height: 5.6rem;
+}
+
+.header__heading-link,
+.header__menu-item,
+.menu-drawer__menu-item,
+.header__icon {
+  color: var(--gl-charcoal);
+}
+
+.header__menu-item:hover,
+.header__active-menu-item,
+details[open] > .header__menu-item,
+.header__icon:hover {
+  color: var(--gl-rose-dark);
+  text-decoration: none;
+}
+
+.header__icon .icon,
+.modal__close-button .icon,
+.icon-account,
+.icon-cart,
+.icon-search,
+.icon-hamburger {
+  stroke: currentColor;
+}
+
+.button,
+.customer button,
+.shopify-challenge__button,
+.shopify-payment-button__button--unbranded,
+.product-form__submit,
+.cart__checkout-button {
+  min-height: 4.8rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid var(--gl-rose);
+  background: var(--gl-rose);
+  color: var(--gl-cream);
+  font-family: var(--gl-body-font);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: none;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.button:before,
+.button:after,
+.customer button:before,
+.customer button:after,
+.shopify-challenge__button:before,
+.shopify-challenge__button:after,
+.shopify-payment-button__button--unbranded:before,
+.shopify-payment-button__button--unbranded:after {
+  box-shadow: none;
+}
+
+.button:hover,
+.customer button:hover,
+.shopify-challenge__button:hover,
+.shopify-payment-button__button--unbranded:hover,
+.product-form__submit:hover,
+.cart__checkout-button:hover {
+  background: var(--gl-rose-dark);
+  border-color: var(--gl-rose-dark);
+  color: var(--gl-cream);
+  transform: translateY(-0.1rem);
+}
+
+.button--secondary,
+.shopify-payment-button__more-options,
+.quick-add__submit {
+  background: transparent;
+  color: var(--gl-rose-dark);
+  border-color: var(--gl-rose-light);
+}
+
+.button--secondary:hover,
+.quick-add__submit:hover {
+  background: var(--gl-cream-deep);
+  color: var(--gl-charcoal);
+  border-color: var(--gl-rose);
+}
+
+.field:before,
+.field:after,
+.quantity:before,
+.quantity:after,
+.select:before,
+.select:after {
+  box-shadow: none;
+}
+
+.field__input,
+.select__select,
+.customer .field input,
+.quantity {
+  border: 0.1rem solid var(--gl-border);
+  border-radius: 0.4rem;
+  background: rgba(255, 255, 255, 0.58);
+  color: var(--gl-charcoal);
+}
+
+.field__input:focus,
+.select__select:focus,
+.customer .field input:focus,
+.quantity__input:focus {
+  border-color: var(--gl-rose);
+  box-shadow: 0 0 0 0.2rem rgba(201, 144, 122, 0.14);
+}
+
+.card-wrapper,
+.card,
+.collection-card-wrapper .card,
+.product-card-wrapper .card,
+.article-card-wrapper .card,
+.contains-content-container,
+.content-container {
+  border-radius: 1rem;
+}
+
+.card--card,
+.card--standard .card__inner,
+.product-card-wrapper .card,
+.collection-card-wrapper .card,
+.article-card-wrapper .card,
+.multicolumn-card,
+.image-with-text__content,
+.collapsible-content-wrapper-narrow,
+.product__info-container,
+.cart-drawer .cart-item,
+.cart-upsell-container {
+  background: rgba(255, 255, 255, 0.52);
+  border: 0.1rem solid rgba(155, 102, 82, 0.12);
+  box-shadow: none;
+}
+
+.card__media,
+.card .media,
+.global-media-settings,
+.product__media,
+.product__media img,
+.image-with-text__media,
+.multicolumn-card__image-wrapper {
+  border-radius: 1rem;
+}
+
+.card__heading,
+.card-information,
+.price,
+.product-page-price,
+.cart-drawer .price {
+  color: var(--gl-charcoal);
+}
+
+.price,
+.price .price-item,
+.product-page-price .price-item--sale,
+.cart-drawer .price {
+  font-family: var(--gl-body-font);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.price-item--sale,
+.price--on-sale .price-item--sale {
+  color: var(--gl-rose-dark);
+}
+
+.price-item--regular,
+.price--on-sale .price-item--regular {
+  color: rgba(58, 51, 48, 0.52);
+}
+
+.badge,
+.price__badge-sale,
+.price__badge-sold-out {
+  border: 0;
+  border-radius: 0.4rem;
+  background: var(--gl-mint);
+  color: var(--gl-charcoal);
+  padding: 0.55rem 0.9rem;
+}
+
+.product__info-container {
+  padding: clamp(1.8rem, 2vw, 2.8rem);
+}
+
+.product__title a {
+  display: none;
+}
+
+.product__title h1 {
+  color: var(--gl-charcoal);
+}
+
+.product__text,
+.product__description,
+.rte,
+.cart-drawer .product-option,
+.tax-note {
+  color: rgba(58, 51, 48, 0.78);
+}
+
+.emoji-benefits-container {
+  display: grid;
+  gap: 0.8rem;
+  margin-block: var(--margin-top) var(--margin-bottom);
+}
+
+.emoji-benefits-container p {
+  display: grid;
+  grid-template-columns: 0.8rem 1fr;
+  column-gap: 1rem;
+  align-items: start;
+  margin: 0;
+  padding: 1rem 1.2rem;
+  border: 0.1rem solid var(--gl-border);
+  border-radius: 0.8rem;
+  background: rgba(247, 240, 235, 0.7);
+  color: var(--gl-charcoal);
+  font-size: 1.35rem;
+  line-height: 1.45;
+}
+
+.emoji-benefits-container p::before {
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-top: 0.55rem;
+  border-radius: 50%;
+  background: var(--gl-mint);
+}
+
+.emoji-benefits-container strong {
+  display: block;
+  margin-bottom: 0.15rem;
+  color: var(--gl-charcoal);
+  font-family: var(--gl-body-font);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.emoji-benefits-container span {
+  display: block;
+  color: rgba(58, 51, 48, 0.76);
+}
+
+.gl-rating-line,
+.rating-stars-container,
+.reviews-container,
+.icon-with-text,
+.payment-badges-block,
+.estimated-shipping,
+.urgency-text {
+  color: var(--gl-charcoal);
+}
+
+.gl-rating-line {
+  margin: 0;
+  color: var(--gl-rose-dark);
+}
+
+.quantity-break,
+.quantity-breaks-container,
+.quantity-selector,
+.product-form__input input[type="radio"] + label {
+  border-color: var(--gl-border);
+}
+
+.product-form__input input[type="radio"]:checked + label,
+.quantity-break.selected,
+.quantity-break:hover {
+  border-color: var(--gl-rose);
+  background: rgba(232, 196, 181, 0.3);
+}
+
+.drawer__inner {
+  background: var(--gl-cream);
+  border-left: 0.1rem solid var(--gl-border);
+}
+
+.drawer__header,
+.drawer__footer {
+  border-color: var(--gl-border);
+}
+
+.cart-progress__bar__badge,
+.progress-bar,
+.cart-progress__bar,
+.cart-progress-bar {
+  color: var(--gl-charcoal);
+}
+
+.newsletter-form__field-wrapper,
+.contact .field,
+.customer .field {
+  color: var(--gl-charcoal);
+}
+
+.shopify-section,
+.section {
+  color: var(--gl-charcoal);
+}
+
+.color-scheme-2,
+.color-scheme-3,
+.color-background-2,
+.background-secondary {
+  background-color: var(--gl-cream-deep);
+}
+
+@media screen and (max-width: 749px) {
+  .product__info-container {
+    padding: 1.6rem;
+  }
+
+  .button,
+  .customer button,
+  .shopify-challenge__button,
+  .product-form__submit {
+    min-height: 4.6rem;
+  }
+
+  .emoji-benefits-container p {
+    font-size: 1.28rem;
+  }
+}

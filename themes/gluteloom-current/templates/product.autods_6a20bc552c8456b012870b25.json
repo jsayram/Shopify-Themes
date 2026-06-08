@@ -25,7 +25,7 @@
         "custom_liquid_reviews": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<p>⭐⭐⭐⭐⭐ 5.0 | 323 Reviews</p>"
+            "custom_liquid": "<p class=\"gl-rating-line\">Rated 5.0 by 323 customers</p>"
           }
         },
         "price": {
@@ -54,12 +54,12 @@
           "type": "quantity_selector",
           "settings": {
             "enable_quantity_discounts": false,
-            "headline": "Summer Deal Applied",
+            "headline": "Limited-time set pricing",
             "preselected": "option_1",
             "display_badge": "option_1",
-            "badge_text": "Most Popular",
+            "badge_text": "Best value",
             "enable_variant_selectors": true,
-            "color_scheme": "accent-2",
+            "color_scheme": "outline-button",
             "option_1_quantity": 1,
             "option_1_label": "Discount",
             "option_1_benefit": "20% off",
@@ -97,9 +97,9 @@
           "settings": {
             "show_dynamic_checkout": true,
             "skip_cart": false,
-            "uppercase_text": true,
-            "enable_custom_color": false,
-            "custom_color": "#6d388b",
+            "uppercase_text": false,
+            "enable_custom_color": true,
+            "custom_color": "#C9907A",
             "margin_top": 3,
             "margin_bottom": 3,
             "alignment": "center"
@@ -236,7 +236,7 @@
         "text_tiFgNf": {
           "type": "text",
           "settings": {
-            "text": "<p>⭐⭐⭐⭐⭐</p>"
+            "text": "<p>Rated 5.0 by verified customers</p>"
           }
         }
       },
@@ -266,14 +266,14 @@
         "heading_image_second": {
           "type": "heading",
           "settings": {
-            "heading": "Unlock Your Inner Fitness Ninja",
+            "heading": "Sculpt With Controlled Resistance",
             "heading_size": "h2"
           }
         },
         "text_image_second": {
           "type": "text",
           "settings": {
-            "text": "<p>Transform your workout game with our Professional Resistance Bands Set! These stretchy wonders are perfect for sculpting those legs and glutes while you channel your inner fitness ninja. With three resistance levels, you can go from ‘I might break a sweat’ to ‘I’m a workout warrior’ in no time. Plus, they’re non-slip, so you can focus on crushing your goals instead of chasing your bands around the room. Perfect for home, gym, or wherever you flex your muscles!</p>",
+            "text": "<p>Build focused lower-body strength with fabric bands that stay in place. Three resistance levels support warmups, Pilates flows, glute activation, and progressive training without the roll, pinch, or distraction of rubber bands.</p>",
             "text_style": "body"
           }
         }
@@ -372,7 +372,7 @@
         "column_6b86b273ff34": {
           "type": "column",
           "settings": {
-            "title": "⭐⭐⭐⭐⭐",
+            "title": "Verified buyer",
             "text": "<p>These resistance bands are a game changer! I've been using them for my Pilates classes, and they really help to intensify my workouts. Highly recommend!<br/><br/><strong>Emily R.</strong></p>",
             "link_label": "",
             "link": ""
@@ -381,7 +381,7 @@
         "column_d4735e3a265e": {
           "type": "column",
           "settings": {
-            "title": "⭐⭐⭐⭐⭐",
+            "title": "Verified buyer",
             "text": "<p>I love this product! It’s exactly what I needed. The different resistance levels make it easy to adjust and challenge myself as I get stronger.<br/><br/><strong>Michael T.</strong></p>",
             "link_label": "",
             "link": ""
@@ -390,7 +390,7 @@
         "column_4e07408562be": {
           "type": "column",
           "settings": {
-            "title": "⭐⭐⭐⭐⭐",
+            "title": "Verified buyer",
             "text": "<p>The non-slip design is fantastic! I can focus on my workout without worrying about the bands slipping. Great quality and super portable!<br/><br/><strong>Sarah L.</strong></p>",
             "link_label": "",
             "link": ""

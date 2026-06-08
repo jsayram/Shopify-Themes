@@ -45,9 +45,9 @@
           "type": "rating_stars",
           "settings": {
             "rating": 4.8,
-            "star_color": "#f5c05c",
+            "star_color": "#C9907A",
             "bg_stars_style": "full",
-            "bg_star_color": "#ececec",
+            "bg_star_color": "#E8C4B5",
             "label": "(345 Reviews)",
             "size": 12,
             "alignment": "flex-start",
@@ -79,11 +79,11 @@
         },
         "emoji_benefits_xFGiTn": {
           "type": "emoji_benefits",
-          "disabled": true,
+          "disabled": false,
           "settings": {
-            "benefits": "{{ product.metafields.custom.emoji_benefit | metafield_tag }}",
-            "margin_top": 0,
-            "margin_bottom": 0
+            "benefits": "<p><strong>Woven fabric grip</strong><br/>No rolling or pinching.</p><p><strong>Three resistance levels</strong><br/>Light, medium, and heavy.</p><p><strong>Made for movement</strong><br/>Built for glutes, Pilates, and strength training.</p>",
+            "margin_top": 15,
+            "margin_bottom": 15
           }
         },
         "quantity_selector": {
@@ -135,7 +135,7 @@
             "skip_cart": false,
             "uppercase_text": false,
             "enable_custom_color": true,
-            "custom_color": "#6f7ca2",
+            "custom_color": "#C9907A",
             "margin_top": 0,
             "margin_bottom": 0,
             "alignment": "center"
@@ -187,7 +187,7 @@
           "type": "reviews",
           "settings": {
             "display_stars": true,
-            "star_color": "#ffcc00",
+            "star_color": "#C9907A",
             "avatar_alignment": "top",
             "author_1": "{{ product.metafields.custom.review_1_author_name.value }}",
             "text_1": "<p>{{ product.metafields.custom.review_1_text | metafield_tag }}</p>",

@@ -1,0 +1,672 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_size": "h1",
+            "title_alignment": "left",
+            "uppercase_title": false,
+            "margin_top": 0,
+            "margin_bottom": 6
+          }
+        },
+        "rating_stars": {
+          "type": "rating_stars",
+          "settings": {
+            "rating": 4.8,
+            "star_color": "#C9907A",
+            "bg_stars_style": "full",
+            "bg_star_color": "#E8C4B5",
+            "label": "(323 verified reviews)",
+            "size": 12,
+            "alignment": "flex-start",
+            "margin_top": 0,
+            "margin_bottom": 12
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "layout": "price_second",
+            "price_color": "text",
+            "compare_price_color": "accent-1",
+            "hide_sale_badge": false,
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_types": "swatches, pills",
+            "custom_labels": "[name]",
+            "swatches_custom_colors": "image_alt",
+            "swatches_custom_colors_list": "#000000, #D1DD1D, #0000FF, #FFCC00",
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "brand_benefits": {
+          "type": "emoji_benefits",
+          "settings": {
+            "benefits": "<p><strong>Woven fabric grip</strong><br/>Stays smooth through squats, hip thrusts, and Pilates flows.</p><p><strong>Three resistance levels</strong><br/>Light, medium, and heavy support warmups through progressive strength work.</p><p><strong>Soft against skin</strong><br/>A wide fabric band helps reduce rolling, pinching, and mid-workout readjusting.</p>",
+            "margin_top": 15,
+            "margin_bottom": 15
+          },
+          "disabled": false
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "margin_top": 12,
+            "margin_bottom": 12
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "enable_quantity_discounts": false,
+            "headline": "Choose your set",
+            "preselected": "option_1",
+            "display_badge": "none",
+            "badge_text": "",
+            "enable_variant_selectors": true,
+            "color_scheme": "outline-button",
+            "option_1_quantity": 1,
+            "option_1_label": "Single set",
+            "option_1_benefit": "",
+            "option_1_caption": "",
+            "option_1_percentage_off_text": "",
+            "option_1_fixed_amount_off": "",
+            "option_1_compare_price": "price",
+            "option_2_quantity": 0,
+            "option_2_label": "",
+            "option_2_benefit": "",
+            "option_2_caption": "",
+            "option_2_percentage_off_text": "",
+            "option_2_fixed_amount_off": "",
+            "option_2_compare_price": "compare_price",
+            "option_3_quantity": 0,
+            "option_3_label": "",
+            "option_3_benefit": "",
+            "option_3_caption": "",
+            "option_3_percentage_off_text": "",
+            "option_3_fixed_amount_off": "",
+            "option_3_compare_price": "compare_price",
+            "option_4_quantity": 0,
+            "option_4_label": "",
+            "option_4_benefit": "",
+            "option_4_caption": "",
+            "option_4_percentage_off_text": "",
+            "option_4_fixed_amount_off": "",
+            "option_4_compare_price": "compare_price",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "skip_cart": false,
+            "uppercase_text": false,
+            "enable_custom_color": true,
+            "custom_color": "#C9907A",
+            "margin_top": 6,
+            "margin_bottom": 6,
+            "alignment": "center"
+          }
+        },
+        "icon_with_text": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_size": "small",
+            "icon_1": "truck",
+            "heading_1": "Tracked shipping",
+            "icon_2": "box",
+            "heading_2": "Easy returns",
+            "icon_3": "return",
+            "heading_3": "Secure checkout",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "materials_and_care": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials and care",
+            "icon": "washing",
+            "content": "<p>Wide woven fabric with a non-slip inner grip. Wipe clean after training and air dry before storing.</p>",
+            "page": "",
+            "margin_top": 9,
+            "margin_bottom": 0
+          }
+        },
+        "shipping_returns": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping and returns",
+            "icon": "truck",
+            "content": "<p>Tracked shipping is available at checkout. Keep the bands unused and in original condition for return eligibility.</p>",
+            "page": "",
+            "margin_top": 0,
+            "margin_bottom": 9
+          }
+        },
+        "payment_badges": {
+          "type": "payment_badges",
+          "settings": {
+            "enabled_payment_types": "american_express, apple_pay, bitcoin, google_pay, ideal, jcb, klarna, litecoin, maestro, master, paypal, shopify_pay, sofort, unionpay, visa",
+            "margin_top": 6,
+            "margin_bottom": 6
+          }
+        },
+        "estimated_shipping": {
+          "type": "estimated_shipping",
+          "settings": {
+            "display_icon": true,
+            "icon_size": "small",
+            "icon_alignment": "middle",
+            "message": "<p>Estimated delivery between <strong>[start_date]</strong> and <strong>[end_date]</strong>.</p>",
+            "min_shipping_days": 5,
+            "max_shipping_days": 10,
+            "date_format": "day_mm_dd",
+            "days_labels": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday",
+            "months_labels": "January, February, March, April, May, June, July, August, September, October, November, December",
+            "margin_top": 15,
+            "margin_bottom": 15
+          }
+        },
+        "sticky_atc": {
+          "type": "sticky_atc",
+          "disabled": true,
+          "settings": {
+            "function": "add_to_cart",
+            "display_when": "after_scroll",
+            "color_scheme": "scheme-1",
+            "button_label": "Add to cart",
+            "enable_custom_btn_color": true,
+            "custom_btn_color": "#C9907A",
+            "show_price_badge": true,
+            "show_variant_picker": true,
+            "desktop_show_title": true,
+            "desktop_show_price": true,
+            "mobile_show_title": false,
+            "mobile_show_price": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "rating_stars",
+        "price",
+        "variant_picker",
+        "brand_benefits",
+        "description",
+        "quantity_selector",
+        "buy_buttons",
+        "icon_with_text",
+        "materials_and_care",
+        "shipping_returns",
+        "payment_badges",
+        "estimated_shipping",
+        "sticky_atc"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "display_variant_image_first": true,
+        "disable_prepend": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "desktop_thumbnails_count": 4,
+        "video_player": "play_btn",
+        "enable_video_looping": false,
+        "autoplay_videos_pause_btn": true,
+        "play_btn_color_scheme": "background-1",
+        "mobile_thumbnails": "columns",
+        "mobile_media_corner_radius": 0,
+        "mobile_spacing": true,
+        "mobile_preview_media": true,
+        "mobile_thumbnails_count": 5,
+        "mobile_pagination": "dots_under",
+        "hide_arrows": true,
+        "dots_color_scheme": "inverse",
+        "trust_badge_position": "top-right",
+        "trust_badge_size": "medium",
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 24,
+        "desktop_padding_top": 36,
+        "desktop_padding_bottom": 36
+      }
+    },
+    "brand_statement": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UYW9Am": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><strong>Strong. Woven. Perfected.</strong></h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_AmgKAq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GluteLoom is designed for lower-body training that feels focused, secure, and refined. Soft woven resistance helps you stay locked into every rep without the rolling and pinching that makes cheap bands feel disposable.</p>"
+          }
+        },
+        "button_xMrFWR": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UYW9Am",
+        "text_AmgKAq",
+        "button_xMrFWR"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "padding_top": 44,
+        "padding_bottom": 52,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39",
+        "custom_colors_solid_button_background": "#dd1d1d",
+        "custom_colors_solid_button_text": "#ffffff"
+      }
+    },
+    "resistance_guide": {
+      "type": "multicolumn",
+      "blocks": {
+        "light": {
+          "type": "column",
+          "settings": {
+            "title": "Light",
+            "text": "<p>20-35 lbs<br/>Best for warmups, activation, beginners, and high-rep Pilates flows.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "medium": {
+          "type": "column",
+          "settings": {
+            "title": "Medium",
+            "text": "<p>30-50 lbs<br/>A balanced everyday resistance for glute bridges, squats, and lateral walks.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "heavy": {
+          "type": "column",
+          "settings": {
+            "title": "Heavy",
+            "text": "<p>45-70 lbs<br/>Built for stronger sets, slower tempo work, and progressive lower-body training.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "light",
+        "medium",
+        "heavy"
+      ],
+      "settings": {
+        "title": "Choose your resistance level",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 44
+      }
+    },
+    "fabric_story": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_image_third": {
+          "type": "heading",
+          "settings": {
+            "heading": "Woven to Stay Put",
+            "heading_size": "h1"
+          }
+        },
+        "text_image_third": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GluteLoom bands are made for the moments when focus matters: hip thrusts, squats, kickbacks, lateral walks, Pilates flows, and travel workouts.</p><p>The wide woven profile helps distribute pressure more comfortably than thin rubber bands, while the inner grip supports a secure fit through repeated movement.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_image_third",
+        "text_image_third"
+      ],
+      "name": "Image with text - fit story",
+      "settings": {
+        "image": "shopify://shop_images/LEVELS_2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 44,
+        "padding_bottom": 44
+      }
+    },
+    "comparison": {
+      "type": "ds-comparison-table",
+      "blocks": {
+        "woven_grip": {
+          "type": "row",
+          "settings": {
+            "benefit": "Wide woven fabric helps reduce rolling",
+            "us": true,
+            "others": false
+          }
+        },
+        "soft_feel": {
+          "type": "row",
+          "settings": {
+            "benefit": "Soft feel against skin",
+            "us": true,
+            "others": false
+          }
+        },
+        "three_levels": {
+          "type": "row",
+          "settings": {
+            "benefit": "Three resistance levels in one set",
+            "us": true,
+            "others": true
+          }
+        },
+        "lower_body": {
+          "type": "row",
+          "settings": {
+            "benefit": "Designed around glute and lower-body training",
+            "us": true,
+            "others": false
+          }
+        },
+        "travel_ready": {
+          "type": "row",
+          "settings": {
+            "benefit": "Compact enough for gym bags and travel",
+            "us": true,
+            "others": true
+          }
+        }
+      },
+      "block_order": [
+        "woven_grip",
+        "soft_feel",
+        "three_levels",
+        "lower_body",
+        "travel_ready"
+      ],
+      "settings": {
+        "title": "Why GluteLoom feels different",
+        "heading_size": "h2",
+        "text": "<h5>A professional resistance band should support the workout instead of interrupting it. GluteLoom focuses on fabric comfort, stable grip, and resistance levels that make progression simple.</h5>",
+        "button_label": "",
+        "link": "",
+        "button_style_secondary": false,
+        "color_scheme": "custom",
+        "layout": "table_second",
+        "benefit_color_scheme": "background-1",
+        "checkmark_color": "#9EC4B8",
+        "icon_cells_color_scheme": "background-1",
+        "us_label": "GluteLoom",
+        "us_label_size": 12,
+        "logo_width": 90,
+        "mobile_logo_width": 60,
+        "others_label": "Rubber bands",
+        "others_label_size": 12,
+        "others_logo_width": 90,
+        "others_mobile_logo_width": 60,
+        "padding_top": 44,
+        "padding_bottom": 44,
+        "custom_colors_background": "#F7F0EB",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#3A3330",
+        "custom_colors_solid_button_background": "#C9907A",
+        "custom_colors_solid_button_text": "#FFFFFF",
+        "custom_colors_outline_button": "#9B6652"
+      }
+    },
+    "testimonials": {
+      "type": "ds-testimonials",
+      "blocks": {
+        "column_WMiiaV": {
+          "type": "column",
+          "settings": {
+            "title": "Stays in place",
+            "text": "<h5>I can move through glute bridges and lateral walks without stopping to fix the band.</h5>",
+            "author": "Ashley M."
+          }
+        },
+        "column_pc6jEt": {
+          "type": "column",
+          "settings": {
+            "title": "Easy to progress",
+            "text": "<h5>The three resistance levels make it simple to warm up, train, and push heavier sets.</h5>",
+            "author": "Emily R."
+          }
+        },
+        "column_eK8tjh": {
+          "type": "column",
+          "settings": {
+            "title": "Soft but strong",
+            "text": "<h5>The fabric feels much better than rubber bands, and it still holds tension through the full set.</h5>",
+            "author": "Sarah L."
+          }
+        }
+      },
+      "block_order": [
+        "column_WMiiaV",
+        "column_pc6jEt",
+        "column_eK8tjh"
+      ],
+      "settings": {
+        "title": "What customers notice first",
+        "heading_size": "h2",
+        "text": "",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "slider_preview": false,
+        "column_alignment": "center",
+        "show_stars": true,
+        "stars_color": "#C9907A",
+        "show_quotes": false,
+        "quotes_color_scheme": "accent-2",
+        "background_style": "primary",
+        "color_scheme": "scheme-1",
+        "padding_top": 44,
+        "padding_bottom": 44,
+        "custom_colors_background": "#FFFFFF",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#3A3330"
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_6b86b273ff34": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the resistance levels of the bands?",
+            "icon": "none",
+            "row_content": "<p>The set includes light, medium, and heavy resistance levels. Use light for activation and warmups, medium for everyday strength work, and heavy for slower or more challenging lower-body sets.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_d4735e3a265e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use these bands for yoga and Pilates?",
+            "icon": "none",
+            "row_content": "<p>Yes. The bands work well for Pilates, yoga flows, glute activation, squats, hip thrusts, kickbacks, lateral walks, and warmups.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_4e07408562be": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are the bands suitable for both men and women?",
+            "icon": "none",
+            "row_content": "<p>Yes. Choose the resistance level that matches your current strength and the movement you are training.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_4b227777d4dd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I clean and maintain the resistance bands?",
+            "icon": "none",
+            "row_content": "<p>Wipe the bands with a damp cloth after training and let them air dry. Avoid harsh chemicals and high heat.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ef2d127de37b": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if the fit is not right for me?",
+            "icon": "none",
+            "row_content": "<p>Keep the product unused and in original condition while you check your order. Return eligibility is confirmed through the store return policy.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_e7f6c011776e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How portable are these resistance bands?",
+            "icon": "none",
+            "row_content": "<p>The set is lightweight and compact enough for home workouts, gym bags, and travel.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_7902699be42c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do the bands slip during workouts?",
+            "icon": "none",
+            "row_content": "<p>The wide woven shape and inner grip are designed to help the band stay secure during repeated movement.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_2c624232cdd2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does shipping take?",
+            "icon": "none",
+            "row_content": "<p>Delivery estimates vary by location and are confirmed at checkout. The product page estimate gives a general window.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_6b86b273ff34",
+        "collapsible_row_d4735e3a265e",
+        "collapsible_row_4e07408562be",
+        "collapsible_row_4b227777d4dd",
+        "collapsible_row_ef2d127de37b",
+        "collapsible_row_e7f6c011776e",
+        "collapsible_row_7902699be42c",
+        "collapsible_row_2c624232cdd2"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Product questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "scheme-2",
+        "container_color_scheme": "scheme-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 44,
+        "padding_bottom": 44,
+        "custom_colors_background": "#ffffff",
+        "custom_gradient_background": "",
+        "custom_colors_text": "#2e2a39",
+        "custom_contaner_colors_background": "#ffffff",
+        "custom_container_gradient_background": "",
+        "custom_contaner_colors_text": "#2e2a39"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Complete your routine",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "columns_mobile": "2",
+        "padding_top": 44,
+        "padding_bottom": 44
+      }
+    }
+  },
+  "order": [
+    "main",
+    "brand_statement",
+    "resistance_guide",
+    "fabric_story",
+    "comparison",
+    "testimonials",
+    "faq",
+    "related-products"
+  ]
+}

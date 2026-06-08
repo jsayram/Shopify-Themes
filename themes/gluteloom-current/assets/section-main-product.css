@@ -1936,8 +1936,8 @@ secondary-variant-select {
 
 .emoji-benefits-container p,
 .emoji-benefits-container {
-  font-size: 1.4rem;
-  line-height: 1;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 @media screen and (min-width: 990px) {
