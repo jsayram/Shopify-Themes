@@ -1,10 +1,22 @@
 #!/usr/bin/env sh
 set -eu
 
+# Local settings (git-ignored): copy .env.example to .env and set SHOPIFY_FLAG_STORE.
+if [ -f .env ]; then
+  set -a
+  . ./.env
+  set +a
+fi
+
 theme_slug="${1:-gluteloom-current}"
-store="${2:-gluteloom}"
+store="${2:-${SHOPIFY_FLAG_STORE:-}}"
 port="${3:-}"
 theme_dir="themes/$theme_slug"
+
+if [ -z "$store" ]; then
+  echo "No store set. Put SHOPIFY_FLAG_STORE=<store> in .env (see .env.example) or pass it as the second argument."
+  exit 1
+fi
 
 if [ ! -d "$theme_dir" ]; then
   echo "Theme folder not found: $theme_dir"

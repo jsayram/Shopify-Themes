@@ -4,6 +4,8 @@ This repository is the main workspace for Shopify themes. Each full theme lives 
 
 ## Daily Workflow
 
+One-time setup: copy `.env.example` to `.env` (git-ignored) and set `SHOPIFY_FLAG_STORE` to your store handle. Shopify CLI reads that variable too, so the `--store` flag becomes optional.
+
 For the GluteLoom theme, start here from the repo root:
 
 ```bash
@@ -14,7 +16,7 @@ sh scripts/dev-theme.sh
 That helper runs:
 
 ```bash
-shopify theme dev --store gluteloom --path themes/gluteloom-current --theme-editor-sync
+shopify theme dev --store "$SHOPIFY_FLAG_STORE" --path themes/gluteloom-current --theme-editor-sync
 ```
 
 Use the printed local preview URL for storefront testing and the printed editor URL for Shopify Theme Editor changes.
@@ -22,7 +24,7 @@ Use the printed local preview URL for storefront testing and the printed editor 
 If port `9292` is busy, pass a port:
 
 ```bash
-sh scripts/dev-theme.sh gluteloom-current gluteloom 9293
+sh scripts/dev-theme.sh gluteloom-current "$SHOPIFY_FLAG_STORE" 9293
 ```
 
 ## What To Edit Where
@@ -92,19 +94,19 @@ For the files Codex edits locally, usually choose `Keep the local version`.
 Pull a store theme into a folder:
 
 ```bash
-shopify theme pull --store gluteloom --theme THEME_ID --path themes/theme-slug
+shopify theme pull --store "$SHOPIFY_FLAG_STORE" --theme THEME_ID --path themes/theme-slug
 ```
 
 Preview a theme locally:
 
 ```bash
-shopify theme dev --store gluteloom --path themes/theme-slug --theme-editor-sync
+shopify theme dev --store "$SHOPIFY_FLAG_STORE" --path themes/theme-slug --theme-editor-sync
 ```
 
 Push to an unpublished or specific theme:
 
 ```bash
-shopify theme push --store gluteloom --theme THEME_ID --path themes/theme-slug
+shopify theme push --store "$SHOPIFY_FLAG_STORE" --theme THEME_ID --path themes/theme-slug
 ```
 
 Do not push to the live theme until the preview has been checked.
